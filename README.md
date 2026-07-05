@@ -22,10 +22,11 @@ rescue: the recompiled executable *is* the preservation.
 
 ## Status
 
-🚧 **Scaffolding.** The Xbox 360 binary recompiles cleanly to C++ (base
-`0x82000000`, 43.6 MB image) via ReXGlue v0.8.0's codegen — the project builds and
-the runtime boots into engine init. Getting it to render and play is the work in
-progress: GPU/shader bring-up, audio, and input.
+🚧 **Scaffolded — recompiled to C++, build up next.** The Xbox 360 binary
+recompiles cleanly (base `0x82000000`, a hefty 43.6 MB image) via ReXGlue v0.8.0's
+codegen with 4 function-entry hints (baked into the manifest). Next is building and
+first boot; then the real work — GPU/shader bring-up, audio, and input. Being a
+3D/VMX-heavy arcade title, it'll exercise more of the runtime than the 2D catalog.
 
 | Stage | State |
 |---|---|
